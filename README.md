@@ -129,3 +129,46 @@ Purchase the book here
 - Interesting Return Patterns
 
 ### Reference
+
+## Behaviour
+
+### Composed Method
+
+How do you divide a program into methods?
+
+Divide your program into methods that perform one identifiable task. Keep all of
+the operations in a method at the same level of abstraction. This will naturally
+result in programs with many small methods, each a few lines long.
+
+Anytime you are sending two or more messages from one object to another in a
+single method, you may be able to create a Composed Method in the receiver
+that combines those messages.
+
+```javascript
+class Controller {
+  controlInitialise() {
+    console.log('Controller initialising...');
+  }
+
+  controlLoop() {
+    console.log('Controller looping: 1, 2, 3');
+  }
+
+  controlTerminate() {
+    console.log('Controller terminated');
+  }
+
+  controlActivity() {
+    this.controlInitialise();
+    this.controlLoop();
+    this.controlTerminate();
+  }
+}
+
+const controller = new Controller();
+
+controller.controlActivity();
+// => Controller initialising...
+// => Controller looping: 1, 2, 3
+// => Controller terminated
+```
