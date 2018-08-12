@@ -6,6 +6,8 @@ Purchase the book here
 
 ## Patterns
 
+Notes on patterns.
+
 ### Behaviour
 
 #### Methods
@@ -171,4 +173,24 @@ controller.controlActivity();
 // => Controller initialising...
 // => Controller looping: 1, 2, 3
 // => Controller terminated
+```
+
+### Constructor Method
+
+How do you represent instance creation?
+
+Provide methods that create well-formed instances. Pass all required parameters
+to them on instance creation.
+
+```Javascript
+class Point {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+
+  initialise(r, theta) {
+    return new Point(r * Math.cos(theta), r * Math.sin(theta))
+  }
+}
 ```
