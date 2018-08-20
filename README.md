@@ -689,3 +689,31 @@ borderedFigure.display();
 ```
 
 ### Modifying Super
+
+How do you change part of the behaviour of a superclass method without modifying it?
+
+Override the method and invoke "super", then execute the code to modify the results.
+
+
+```Javascript
+class IntegerAdder {
+  constructor() {
+    this._sum = this.defaultSum();
+    this._count = this.defaultCount();
+  };
+
+  get defaultSum() {
+    return 0;
+  };
+
+  get defaultCount() {
+    return 0;
+  }
+};
+
+class FloatAdder {
+  get defaultSum() {
+    return 0.0;
+  }
+}
+```
