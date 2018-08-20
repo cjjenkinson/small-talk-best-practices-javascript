@@ -654,3 +654,38 @@ which the encoded object will send decoded messages.
 How do you add to a superclass implementation of a method?
 
 Override the method and send a message to "super" in the overriding method.
+
+```javascript
+class Displayable {
+	constructor() {
+		this._display = 'Displaying...';
+	}
+
+	display() {
+		console.log(this._display)
+	}
+
+}
+
+class BorderedFigure extends Displayable {
+	constructor() {
+    super()
+    this._border = 'Border';
+  }
+
+  display() {
+    super.display();
+    return this.displayBorder();
+  }
+
+	displayBorder() {
+		console.log(`with ${this._border}`)
+	}
+}
+
+const borderedFigure = new BorderedFigure();
+
+borderedFigure.display();
+```
+
+### Modifying Super
