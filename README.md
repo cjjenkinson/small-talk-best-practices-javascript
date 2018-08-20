@@ -2,11 +2,11 @@
 
 My best efforts of converting the patterns in SmallTalk best practices by Kent Beck in Javascript.
 
-I've been working from (Ruby conversions)[https://github.com/ruben/smalltalk-best-practice-patterns/tree/master/3-behaviour/1-methods] and conversions of the SmallTalk language itself to (Java)[http://users.informatik.haw-hamburg.de/~pfeiffer/pub/javasmalltalksyntax.html] then to Javascript from my own intuition so some of the representations might be off.
+I've been working from [Ruby conversions](https://github.com/ruben/smalltalk-best-practice-patterns/tree/master/3-behaviour/1-methods) and conversions of the SmallTalk language itself to [Java](http://users.informatik.haw-hamburg.de/~pfeiffer/pub/javasmalltalksyntax.html) then to Javascript from my own intuition so some of the representations might be off.
 
 PR's are welcomed with suggestions on improvements, fixes and contributions (look for the TODOs).
 
-Purchase your own copy of the book (here)[https://www.amazon.co.uk/Smalltalk-Best-Practice-Patterns-Kent/dp/013476904X].
+Purchase your own copy of the book [here](https://www.amazon.co.uk/Smalltalk-Best-Practice-Patterns-Kent/dp/013476904X).
 
 ## Contents
 
