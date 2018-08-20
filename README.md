@@ -131,31 +131,6 @@ A brief introduction to how to use classes, since most of the topics regarding c
 - ByteArray
 - Interval
 
-#### Collection Protocol
-
-- IsEmpty
-- Includes
-- Concatentation
-- Enumeration
-- Do
-- Collect
-- State/Reject
-- Detect
-- Inject:into
-
-#### Collection Idioms
-
-- Duplicate Removing Set
-- Temporarily Sorted Collection
-- Stack
-- Queue
-- Searching Literal
-- Lookup Cache
-- Parsing Stream
-- Concatenating Stream
-- Simple Superclass Name
-- Qualified Subclass Name
-
 ### Formatting
 
 - Inline Message Pattern
@@ -717,3 +692,12 @@ class FloatAdder {
   }
 }
 ```
+
+### Simple Delegation
+
+A composed method needs work done by another object. A message invokes computation
+in another object.
+
+How do you invoke a disinterested delegate?
+
+Delegate messages unchanged.
